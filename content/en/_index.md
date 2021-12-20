@@ -1,8 +1,7 @@
-+++
-title = "Goldydocs"
-linkTitle = "Goldydocs"
-
-+++
+---
+title: "Goldydocs"
+linkTitle: "Goldydocs"
+---
 
 {{< blocks/cover title="Welcome to Goldydocs: A Docsy Example Project!" image_anchor="top" height="full" color="orange" >}}
 <div class="mx-auto">
