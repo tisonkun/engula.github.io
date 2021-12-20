@@ -1,80 +1,46 @@
 ---
-title: "Goldydocs"
-linkTitle: "Goldydocs"
+title: "Engula"
+linkTitle: "Engula"
 ---
 
-{{< blocks/cover title="Welcome to Goldydocs: A Docsy Example Project!" image_anchor="top" height="full" color="orange" >}}
+{{< blocks/cover title="Welcome to Engula!" image_anchor="top" height="full" color="orange" >}}
 <div class="mx-auto">
 	<a class="btn btn-lg btn-primary mr-3 mb-4" href="{{< relref "/docs" >}}">
-		Learn More <i class="fas fa-arrow-alt-circle-right ml-2"></i>
+		Quick Start <i class="fas fa-arrow-alt-circle-right ml-2"></i>
 	</a>
-	<a class="btn btn-lg btn-secondary mr-3 mb-4" href="https://github.com/google/docsy-example">
-		Download <i class="fab fa-github ml-2 "></i>
+	<a class="btn btn-lg btn-secondary mr-3 mb-4" href="https://github.com/engula/engula">
+		GitHub <i class="fab fa-github ml-2 "></i>
 	</a>
-	<p class="lead mt-5">Porridge temperature assessment - in the cloud!</p>
+	<p class="lead mt-5">Empower engineers to build reliable and cost-effective databases with less effort and more confidence.</p>
 	{{< blocks/link-down color="info" >}}
 </div>
 {{< /blocks/cover >}}
 
+{{< blocks/section color="white" >}}
 
-{{% blocks/lead color="primary" %}}
-Goldydocs provides a single web UI providing visibility into porridge temperature, chair size, and bed softness metrics! You can even find out who's been eating **your** porridge.
+<div class="container" style="width: 50%">
 
-(Sadly, Goldydocs isn't a real project, but you can use this site as an example to create your own real websites with [Docsy](http://docsy.dev))
-{{% /blocks/lead %}}
+<img alt="Engula" src="/img/logo-wide.png" class="img-fluid">
 
-{{< blocks/section color="dark" >}}
-{{% blocks/feature icon="fa-lightbulb" title="New chair metrics!" %}}
-The Goldydocs UI now shows chair size metrics by default.
+Building databases is challenging. Take a standalone database as an example. We need to consider the file format, data structure, cache, optimizer, transaction, wire protocol. If this is not hard enough, then look at a distributed database. We are talking about sharding, scheduling, consistency, availability, parallel processing, distributed transactions, etc. If that is still not formidable, how about a distributed database on the cloud? Disaggregated compute and storage? Multi-tenant? Serverless?
 
-Please follow this space for updates!
-{{% /blocks/feature %}}
+Right, it is so hard to build a database that we should avoid doing it whenever possible. However, business innovation calls for new purpose-built databases. We have witnessed the emergence of new databases in the last decade. We have databases for different workloads, OLTP, OLAP, HTAP, HSAP, HTSAP (Hybrid Transactional/Serving/Analytical Processing, cool, isn't it?). We have databases for different data models, key-value, document, relational, time series, graph, object, vector, and multi-model. We also have domain-specific databases for the internet, medicine, manufacture, life science, machine learning, etc. Modern businesses are so varied that one database does not fit all. And some businesses are so valuable that it is worth building specialized databases to save costs and provide better services.
 
+Besides that, admit it or not, we engineers just love to craft our databases. It is so fun and proud to build a new database, make it into production, and see it serves well. But, on the other hand, it requires so much effort to develop, and it is not so fun to operate and maintain because of the toil and stress. We want a solid foundation to take care of the troubles so that we can focus on the most fun and essential part.
 
-{{% blocks/feature icon="fab fa-github" title="Contributions welcome!" url="https://github.com/google/docsy-example" %}}
-We do a [Pull Request](https://github.com/google/docsy-example/pulls) contributions workflow on **GitHub**. New users are always welcome!
-{{% /blocks/feature %}}
+Fortunately, open-source projects have significantly lowered the bar for homebrew databases in the last decade. Nowadays, tools like RocksDB and gRPC enable us to build a decent standalone database with much less effort. However, when it comes to distributed databases and then cloud databases, things are still tough.
 
+So we decided to build Engula, a storage engine that empowers engineers to build reliable and cost-effective databases with less effort and more confidence. Engula's design goals are as follows:
 
-{{% blocks/feature icon="fab fa-twitter" title="Follow us on Twitter!" url="https://twitter.com/docsydocs" %}}
-For announcement of latest features etc.
-{{% /blocks/feature %}}
+* Elastic: takes advantage of elastic resources on the cloud
+* Adaptive: adapts to dynamic workloads and diverse applications
+* Extensible: provides pluggable interfaces and implementations for customization
+* Platform independent: allows flexible deployments on local hosts, on-premise servers, and cloud platforms
 
+We believe this is the storage engine we want when we build the next database. We are excited about this future, and we welcome everyone to [join](https://github.com/engula/engula) it!
 
-{{< /blocks/section >}}
+by Richard, Laurent
 
-
-{{< blocks/section >}}
-<div class="col">
-<h1 class="text-center">This is the second Section</h1>
-</div>
-
-{{< /blocks/section >}}
-
-
-
-{{< blocks/section >}}
-{{% blocks/feature icon="fab fa-app-store-ios" title="Download **from AppStore**" %}}
-Get the Goldydocs app!
-{{% /blocks/feature %}}
-
-
-{{% blocks/feature icon="fab fa-github" title="Contributions welcome!" url="https://github.com/google/docsy-example" %}}
-We do a [Pull Request](https://github.com/google/docsy-example/pulls) contributions workflow on **GitHub**. New users are always welcome!
-{{% /blocks/feature %}}
-
-
-{{% blocks/feature icon="fab fa-twitter" title="Follow us on Twitter!" url="https://twitter.com/GoHugoIO" %}}
-For announcement of latest features etc.
-{{% /blocks/feature %}}
-
-
-{{< /blocks/section >}}
-
-{{< blocks/section >}}
-
-<div class="col-12">
-<h1 class="text-center">This is another Section</h1>
 </div>
 
 {{< /blocks/section >}}
